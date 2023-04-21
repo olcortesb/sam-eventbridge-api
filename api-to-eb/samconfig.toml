@@ -1,0 +1,13 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-api-gat-eb"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-gidiuiidrxqu"
+s3_prefix = "sam-api-gat-eb"
+region = "us-west-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_NAMED_IAM"
+disable_rollback = true
+parameter_overrides = "Stage=\"dev\" Service=\"ws\""
+image_repositories = []

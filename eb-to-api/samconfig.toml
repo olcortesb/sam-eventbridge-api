@@ -1,0 +1,13 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-eb-api"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-gidiuiidrxqu"
+s3_prefix = "sam-eb-api"
+region = "us-west-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_NAMED_IAM"
+disable_rollback = true
+parameter_overrides = "BlueDragonURL=\"https://webhook.site/765c4ce1-e34e-46aa-8cea-8cfc3957918e\""
+image_repositories = []
