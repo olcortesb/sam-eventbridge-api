@@ -1,0 +1,26 @@
+config:
+  target: "https://94brh0chmf.execute-api.us-west-2.amazonaws.com/dev"
+  phases:
+    - duration: 5
+      arrivalRate: 1
+  payload:
+    path: "message.csv"
+    fields:
+      - "id"
+      - "contacts"
+    loadAll: true
+    cast: true
+    order: random
+  http:
+    # HTTP requests from all virtual users will be sent over the same ten connections.
+    pool: 10
+    timeout: 350
+
+scenarios:
+  - name: "Send dropoff"
+    flow:
+      - post:
+          url: "/upload"
+          json:
+            id: "{{ id }}"
+            contacts: "{{ contacts }}"

@@ -128,3 +128,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+artillery-api-eb/node_modules
+artillery-api-eb/test.json
+artillery-api-eb/report.html
