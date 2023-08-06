@@ -56,3 +56,12 @@ open report.html
 - https://github.com/mavi888/sam-eventbridge/blob/api-destinations/blueDragon/template.yml#L10
 - https://serverlessland.com/patterns/eventbridge-api-destinations
 - https://www.artillery.io/ 
+- (Domain exaample) https://github.com/aws-samples/serverless-patterns/blob/main/apigw-eventbridge/template.yml
+- https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+- https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbus.html
+- https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html
+- https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html
+- https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-route.html
+- https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html
+- https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
+- EventBridge to VPC: vpc endpoint -> https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#create-interface-endpoint.html

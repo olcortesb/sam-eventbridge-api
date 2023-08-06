@@ -6,6 +6,7 @@ Parameters:
     Type: String
 
 Resources:
+  # External api connections (Configure the end api)
   BlueDragonConnection:
     Type: AWS::Events::Connection
     Properties:
@@ -16,6 +17,7 @@ Resources:
           ApiKeyName: ApiKeyName
           ApiKeyValue: BlueDragonApiKeyValue
 
+  # External api destinations (call the api)
   BlueDragonApiDestination:
     Type: AWS::Events::ApiDestination
     Properties:
@@ -25,6 +27,7 @@ Resources:
       HttpMethod: POST
       InvocationRateLimitPerSecond: 10
 
+  # Create the rule on eventBridge
   BlueDragonEventRule: 
     Type: AWS::Events::Rule
     Properties: 
@@ -39,6 +42,7 @@ Resources:
           RoleArn: !GetAtt EventBridgeTargetRole.Arn
           Id: "BlueDragonApiDestination"
 
+  # Add the role for evenBridge to call the endpoint
   EventBridgeTargetRole:
     Type: AWS::IAM::Role
     Properties:

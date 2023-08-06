@@ -1,7 +1,7 @@
 config:
-  target: "https://94brh0chmf.execute-api.us-west-2.amazonaws.com/dev"
+  target: "https://webhook.site/07cd8aa4-9120-4871-b16a-2ee12df4c0ea"
   phases:
-    - duration: 5
+    - duration: 2
       arrivalRate: 1
   payload:
     path: "message.csv"
@@ -24,3 +24,7 @@ scenarios:
           json:
             id: "{{ id }}"
             contacts: "{{ contacts }}"
+          capture: 
+            json: "$.Entries"
+            as: "message_id"
+      - log: "Reuest id: {{ message_id }}"

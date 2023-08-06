@@ -9,5 +9,6 @@ region = "us-west-2"
 confirm_changeset = true
 capabilities = "CAPABILITY_NAMED_IAM"
 disable_rollback = true
-parameter_overrides = "BlueDragonURL=\"https://webhook.site/765c4ce1-e34e-46aa-8cea-8cfc3957918e\""
+parameter_overrides = "BlueDragonURL=\"https://webhook.site/8bdc19db-3ff8-4dbb-ba75-7c6ce17f6b5c\""
 image_repositories = []
+resolve_s3 = true
