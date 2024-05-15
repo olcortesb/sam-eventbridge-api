@@ -84,7 +84,7 @@ Resources:
         Fn::GetAtt: [HttpApiIntegrationEventBridgeRole, Arn]
       RequestParameters:
         # Replace `mycompany` with your needs
-        Source: perzona
+        Source: sujeto
         DetailType: profile
         Detail: $request.body
         EventBusName:
